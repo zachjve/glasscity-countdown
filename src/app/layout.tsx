@@ -13,8 +13,27 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://glasscity.io'),
   title: "GlassCity",
-  description: "Compte à rebours GlassCity",
+  description: "Compte à rebours GlassCity — Lancement lundi 23 mars à 19h.",
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+  },
+  openGraph: {
+    type: "website",
+    locale: "fr_FR",
+    url: "https://glasscity.io",
+    siteName: "GlassCity",
+    title: "GlassCity",
+    description: "Compte à rebours GlassCity — Lancement lundi 23 mars à 19h.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "GlassCity",
+    description: "Compte à rebours GlassCity — Lancement lundi 23 mars à 19h.",
+  },
 };
 
 export default function RootLayout({
@@ -23,7 +42,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="fr">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
