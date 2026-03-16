@@ -49,23 +49,23 @@ export default function Countdown() {
   ];
 
   return (
-    <div className="relative z-10 flex flex-col items-center justify-center min-h-screen">
-      <div className="flex gap-4 sm:gap-8">
+    <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 sm:px-6 w-full max-w-full overflow-hidden">
+      <div className="grid grid-cols-2 sm:flex sm:flex-row gap-2 sm:gap-6 md:gap-8 w-full max-w-md sm:max-w-none sm:w-auto justify-center">
         {units.map(({ value, label }) => (
           <div
             key={label}
-            className="flex flex-col items-center bg-white/10 backdrop-blur-md rounded-2xl px-6 py-4 sm:px-8 sm:py-6 border border-white/20"
+            className="flex flex-col items-center justify-center bg-white/10 backdrop-blur-md rounded-xl sm:rounded-2xl px-3 py-3 sm:px-6 sm:py-4 md:px-8 md:py-6 border border-white/20 min-w-0"
           >
-            <span className="text-4xl sm:text-6xl font-bold tabular-nums text-white">
+            <span className="text-2xl sm:text-4xl md:text-6xl font-bold tabular-nums text-white">
               {String(value).padStart(2, '0')}
             </span>
-            <span className="text-sm sm:text-base text-white/80 uppercase tracking-wider mt-1">
+            <span className="text-xs sm:text-sm md:text-base text-white/80 uppercase tracking-wider mt-0.5 sm:mt-1">
               {label}
             </span>
           </div>
         ))}
       </div>
-      <p className="mt-8 text-white/90 text-lg sm:text-xl font-medium">
+      <p className="mt-6 sm:mt-8 text-white/90 text-sm sm:text-lg md:text-xl font-medium text-center px-2">
         Lancement lundi 23 mars à 19h
       </p>
     </div>
