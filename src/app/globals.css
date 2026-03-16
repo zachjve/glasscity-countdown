@@ -19,6 +19,16 @@
   }
 }
 
+/* Masquer l'attribution Mapbox qui apparaît automatiquement */
+.mapboxgl-ctrl-attrib {
+  display: none !important;
+}
+
+/* Masquer le logo Mapbox qui peut apparaître */
+.mapboxgl-ctrl-logo {
+  display: none !important;
+}
+
 html,
 body {
   margin: 0;
