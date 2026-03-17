@@ -28,11 +28,13 @@ export const metadata: Metadata = {
     siteName: "GlassCity",
     title: "GlassCity",
     description: "Compte à rebours GlassCity — Lancement lundi 23 mars à 19h.",
+    images: [{ url: "/share.png", width: 1200, height: 630, alt: "GlassCity" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "GlassCity",
     description: "Compte à rebours GlassCity — Lancement lundi 23 mars à 19h.",
+    images: [{ url: "/share.png", width: 1200, height: 630, alt: "GlassCity" }],
   },
 };
 
