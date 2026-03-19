@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 import mapboxgl from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
 
-const MAP_STYLE = 'mapbox://styles/zachjve/cmibzzmfz007b01s6ddo23xm0';
+const MAP_STYLE = 'mapbox://styles/zachjve/cmmx9hkog000x01qscd3z9pm5';
 const PARIS_CENTER: [number, number] = [2.2945, 48.8584]; // Tour Eiffel
 
 export default function MapBackground() {
