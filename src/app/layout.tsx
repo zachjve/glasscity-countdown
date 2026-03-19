@@ -12,8 +12,16 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+// URL de base pour les meta (og:image) — doit correspondre au domaine de déploiement
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ||
+  (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : null) ||
+  "https://blacklayer.io";
+
+const shareImageUrl = `${siteUrl}/share3.png`;
+
 export const metadata: Metadata = {
-  metadataBase: new URL('https://glasscity.io'),
+  metadataBase: new URL(siteUrl),
   title: "BlackLayer",
   description: "Compte à rebours BlackLayer — Lancement lundi 23 mars à 19h.",
   icons: {
@@ -24,17 +32,17 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "fr_FR",
-    url: "https://glasscity.io",
+    url: siteUrl,
     siteName: "BlackLayer",
     title: "BlackLayer",
     description: "Compte à rebours BlackLayer — Lancement lundi 23 mars à 19h.",
-    images: [{ url: "/share.png", width: 1200, height: 630, alt: "BlackLayer" }],
+    images: [{ url: shareImageUrl, width: 1536, height: 1024, alt: "BlackLayer" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "BlackLayer",
     description: "Compte à rebours BlackLayer — Lancement lundi 23 mars à 19h.",
-    images: [{ url: "/share.png", width: 1200, height: 630, alt: "BlackLayer" }],
+    images: [{ url: shareImageUrl, width: 1536, height: 1024, alt: "BlackLayer" }],
   },
 };
 
