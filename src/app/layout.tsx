@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://glasscity.io'),
-  title: "GlassCity",
-  description: "Compte à rebours GlassCity — Lancement lundi 23 mars à 19h.",
+  title: "BlackLayer",
+  description: "Compte à rebours BlackLayer — Lancement lundi 23 mars à 19h.",
   icons: {
     icon: [
       { url: "/favicon.svg", type: "image/svg+xml" },
@@ -25,16 +25,16 @@ export const metadata: Metadata = {
     type: "website",
     locale: "fr_FR",
     url: "https://glasscity.io",
-    siteName: "GlassCity",
-    title: "GlassCity",
-    description: "Compte à rebours GlassCity — Lancement lundi 23 mars à 19h.",
-    images: [{ url: "/share.png", width: 1200, height: 630, alt: "GlassCity" }],
+    siteName: "BlackLayer",
+    title: "BlackLayer",
+    description: "Compte à rebours BlackLayer — Lancement lundi 23 mars à 19h.",
+    images: [{ url: "/share.png", width: 1200, height: 630, alt: "BlackLayer" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "GlassCity",
-    description: "Compte à rebours GlassCity — Lancement lundi 23 mars à 19h.",
-    images: [{ url: "/share.png", width: 1200, height: 630, alt: "GlassCity" }],
+    title: "BlackLayer",
+    description: "Compte à rebours BlackLayer — Lancement lundi 23 mars à 19h.",
+    images: [{ url: "/share.png", width: 1200, height: 630, alt: "BlackLayer" }],
   },
 };
 

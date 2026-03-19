@@ -50,16 +50,16 @@ export default function Countdown() {
 
   return (
     <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 sm:px-6 w-full max-w-full overflow-hidden">
-      <div className="grid grid-cols-2 sm:flex sm:flex-row gap-2 sm:gap-6 md:gap-8 w-full max-w-md sm:max-w-none sm:w-auto justify-center">
+      <div className="flex flex-row gap-1 sm:gap-6 md:gap-8 w-full max-w-full sm:max-w-none sm:w-auto justify-center flex-nowrap">
         {units.map(({ value, label }) => (
           <div
             key={label}
-            className="flex flex-col items-center justify-center bg-white/10 backdrop-blur-md rounded-xl sm:rounded-2xl px-3 py-3 sm:px-6 sm:py-4 md:px-8 md:py-6 border border-white/20 min-w-0"
+            className="flex flex-col items-center justify-center bg-white/10 backdrop-blur-md rounded-lg sm:rounded-2xl px-2 py-2 sm:px-6 sm:py-4 md:px-8 md:py-6 border border-white/20 min-w-0 flex-1 sm:flex-initial"
           >
-            <span className="text-2xl sm:text-4xl md:text-6xl font-bold tabular-nums text-white">
+            <span className="text-lg sm:text-4xl md:text-6xl font-bold tabular-nums text-white">
               {String(value).padStart(2, '0')}
             </span>
-            <span className="text-xs sm:text-sm md:text-base text-white/80 uppercase tracking-wider mt-0.5 sm:mt-1">
+            <span className="text-[10px] sm:text-sm md:text-base text-white/80 uppercase tracking-wider mt-0.5 sm:mt-1">
               {label}
             </span>
           </div>

@@ -9,7 +9,7 @@ export default function Home() {
       <div className="fixed top-8 left-1/2 -translate-x-1/2 z-20 flex items-center gap-3">
         <Logo size={40} className="text-white drop-shadow-lg" color="white" />
         <span className="text-4xl font-bold text-white tracking-tight drop-shadow-lg">
-          GlassCity
+          BlackLayer
         </span>
       </div>
       <Countdown />
